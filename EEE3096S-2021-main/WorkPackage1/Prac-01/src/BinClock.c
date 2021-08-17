@@ -32,9 +32,9 @@ void readTime(){
 }
 
 void writeTime(){
-	wiringPiI2CWriteReg8(RTC, HOUR_REGISTER, decCompensation(hours)));
-	wiringPiI2CWriteReg8(RTC, MIN_REGISTER, decCompensation(mins)));
-	wiringPiI2CWriteReg8(RTC, SEC_REGISTER, decCompensation(secs)));
+	wiringPiI2CWriteReg8(RTC, HOUR_REGISTER, decCompensation(hours));
+	wiringPiI2CWriteReg8(RTC, MIN_REGISTER, decCompensation(mins));
+	wiringPiI2CWriteReg8(RTC, SEC_REGISTER, decCompensation(secs));
 }
 
 // Clean up function to avoid damaging used pins
